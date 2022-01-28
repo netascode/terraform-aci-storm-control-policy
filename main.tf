@@ -1,4 +1,4 @@
-resource "aci_rest" "stormctrlIfPol" {
+resource "aci_rest_managed" "stormctrlIfPol" {
   dn         = "uni/infra/stormctrlifp-${var.name}"
   class_name = "stormctrlIfPol"
   content = {

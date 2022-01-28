@@ -1,6 +1,6 @@
 module "aci_storm_control_policy" {
   source  = "netascode/storm-control-policy/aci"
-  version = ">= 0.0.1"
+  version = ">= 0.1.0"
 
   name                       = "SC1"
   alias                      = "SC1-ALIAS"

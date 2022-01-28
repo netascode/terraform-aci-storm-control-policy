@@ -13,7 +13,7 @@ Location in GUI:
 ```hcl
 module "aci_storm_control_policy" {
   source  = "netascode/storm-control-policy/aci"
-  version = ">= 0.0.1"
+  version = ">= 0.1.0"
 
   name                       = "SC1"
   alias                      = "SC1-ALIAS"
@@ -32,7 +32,6 @@ module "aci_storm_control_policy" {
   unknown_unicast_pps        = "1000"
   unknown_unicast_rate       = "10.000000"
 }
-
 ```
 
 ## Requirements
@@ -40,13 +39,13 @@ module "aci_storm_control_policy" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_aci"></a> [aci](#requirement\_aci) | >= 0.2.0 |
+| <a name="requirement_aci"></a> [aci](#requirement\_aci) | >= 2.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aci"></a> [aci](#provider\_aci) | >= 0.2.0 |
+| <a name="provider_aci"></a> [aci](#provider\_aci) | >= 2.0.0 |
 
 ## Inputs
 
@@ -80,5 +79,5 @@ module "aci_storm_control_policy" {
 
 | Name | Type |
 |------|------|
-| [aci_rest.stormctrlIfPol](https://registry.terraform.io/providers/netascode/aci/latest/docs/resources/rest) | resource |
+| [aci_rest_managed.stormctrlIfPol](https://registry.terraform.io/providers/CiscoDevNet/aci/latest/docs/resources/rest_managed) | resource |
 <!-- END_TF_DOCS -->

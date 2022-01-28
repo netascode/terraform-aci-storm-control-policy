@@ -14,7 +14,7 @@ Note that this example will create resources. Resources can be destroyed with `t
 ```hcl
 module "aci_storm_control_policy" {
   source  = "netascode/storm-control-policy/aci"
-  version = ">= 0.0.1"
+  version = ">= 0.1.0"
 
   name                       = "SC1"
   alias                      = "SC1-ALIAS"
@@ -33,6 +33,5 @@ module "aci_storm_control_policy" {
   unknown_unicast_pps        = "1000"
   unknown_unicast_rate       = "10.000000"
 }
-
 ```
 <!-- END_TF_DOCS -->
